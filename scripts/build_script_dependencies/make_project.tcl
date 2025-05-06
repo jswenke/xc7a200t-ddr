@@ -13,6 +13,7 @@ set buildMode $env(TCL_BUILD_MODE)
 if {$buildMode eq 1} {
 	createVivadoProject
 	addProjectIPandHDL
+	genBlockDesign
 	addConstraints
 } elseif {$buildMode eq 2} {
 	puts "Error: Select build option 1, others not implemented yet"

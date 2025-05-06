@@ -66,6 +66,7 @@ proc addProjectIPandHDL {} {
 	import_ip [glob -nocomplain $ipDir/xci/*/*.xci] -quiet
 	import_ip [glob -nocomplain $ipDir/xcix/*/*.xcix] -quiet
 
+
 }	
 
 
