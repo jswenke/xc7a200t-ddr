@@ -56,7 +56,11 @@ export TCL_BUILD_MODE=$buildmode
 
 $XILINX_VIVADO/bin/vivado -mode batch -source $SCRIPT_DIR/build_script_dependencies/make_project.tcl
 
-
+# Comment these out if you want the log/journal files Vivado generates
+rm $SCRIPT_DIR/*.jou 2> /dev/null
+rm $SCRIPT_DIR/*.log 2> /dev/null
+rm $SCRIPT_DIR/../*.jou 2> /dev/null
+rm $SCRIPT_DIR/../*.log 2> /dev/null
 
 
 		
